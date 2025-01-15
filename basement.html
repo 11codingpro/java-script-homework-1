@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basement</title>
+    <style>
+        body.dark{
+            color: azure;
+            background-color: black;
+        }
+        button{
+            display: block;
+            margin: 5px;
+        }
+        .text {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            max-width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>The basement</h1>
+    
+    <button onclick="Godark()">get dark room</button> <br>
+    <div class="Type your name">type your name
+    <input type="text" id="name"></div><br>
+    <button onclick="scream()">Dont click me!</button><br>
+    <button onclick="finshstory()">Story about me!</button><br>
+
+<script>
+    function Godark() {
+        document.body.className = "dark";
+    }
+    function scream() {
+        var person_name = document.getElementById("name").value;
+        alert("i told you not to touch that button  "+person_name);
+    }
+    
+
+</script>
+
+
+
+    
+</body>
+</html>
